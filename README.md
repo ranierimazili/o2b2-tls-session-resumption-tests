@@ -17,6 +17,11 @@ Caso seu host esteja configurado para obrigar o mTLS, copie chave pública e pri
 * **Chave pública:** client-cert.pem
 * **Chave privada:** client-key.pem
 
+## Executando o projeto
+```
+node index.js
+```
+
 ## TLS Session Resumption
 TLS Session Resumption é um recurso que, uma vez configurado no servidor que está recebendo a conexão, possibilita ao cliente a reutilização da sessão em conexões posteriores, diminuindo do tempo do TLS Handshake no estabelecimento da conexão.
 
