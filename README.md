@@ -35,6 +35,7 @@ As linhas ou itens riscados são as etapas que não existem em uma conexão com 
 ## Testes realizados
 
 Foi configurado um servidor Nginx para receber as conexões e 3 configurações distintas foram realizadas e em cada uma delas o programa foi executado para realização da medição da performance.
+Nos logs do Nginx, foi adicionada a variável $ssl_session_reused, que indica quando uma conexão é derivada de uma sessão existente ou não.
 
 ### Sem TLS Session Resumption
 No Nginx foi configurado os valores abaixo para desativação completa do TLS Session Resumption.
